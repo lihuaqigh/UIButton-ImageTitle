@@ -15,7 +15,7 @@
 		AB44014420317F4F00019B54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB44014320317F4F00019B54 /* main.m */; };
 		AB44014E20317F4F00019B54 /* DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB44014D20317F4F00019B54 /* DemoTests.m */; };
 		AB44015920317F5000019B54 /* DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB44015820317F5000019B54 /* DemoUITests.m */; };
-		AB44016D2031853A00019B54 /* UIButton+ImageTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = AB44016C2031853A00019B54 /* UIButton+ImageTitle.m */; };
+		AB4B45FD206200400043FBA6 /* CCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AB4B45FC206200400043FBA6 /* CCButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +52,8 @@
 		AB44015420317F5000019B54 /* DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB44015820317F5000019B54 /* DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoUITests.m; sourceTree = "<group>"; };
 		AB44015A20317F5000019B54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AB44016B2031853A00019B54 /* UIButton+ImageTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ImageTitle.h"; sourceTree = "<group>"; };
-		AB44016C2031853A00019B54 /* UIButton+ImageTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ImageTitle.m"; sourceTree = "<group>"; };
+		AB4B45FB206200400043FBA6 /* CCButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCButton.h; sourceTree = "<group>"; };
+		AB4B45FC206200400043FBA6 /* CCButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +84,7 @@
 		AB44012820317F4F00019B54 = {
 			isa = PBXGroup;
 			children = (
-				AB44016A2031853A00019B54 /* UIButton+ImageTitle */,
+				AB44016A2031853A00019B54 /* CCButton */,
 				AB44013320317F4F00019B54 /* Demo */,
 				AB44014C20317F4F00019B54 /* DemoTests */,
 				AB44015720317F5000019B54 /* DemoUITests */,
@@ -136,14 +136,14 @@
 			path = DemoUITests;
 			sourceTree = "<group>";
 		};
-		AB44016A2031853A00019B54 /* UIButton+ImageTitle */ = {
+		AB44016A2031853A00019B54 /* CCButton */ = {
 			isa = PBXGroup;
 			children = (
-				AB44016B2031853A00019B54 /* UIButton+ImageTitle.h */,
-				AB44016C2031853A00019B54 /* UIButton+ImageTitle.m */,
+				AB4B45FB206200400043FBA6 /* CCButton.h */,
+				AB4B45FC206200400043FBA6 /* CCButton.m */,
 			);
-			name = "UIButton+ImageTitle";
-			path = "../UIButton+ImageTitle";
+			name = CCButton;
+			path = ../CCButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,8 +280,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB44013920317F4F00019B54 /* ViewController.m in Sources */,
+				AB4B45FD206200400043FBA6 /* CCButton.m in Sources */,
 				AB44014420317F4F00019B54 /* main.m in Sources */,
-				AB44016D2031853A00019B54 /* UIButton+ImageTitle.m in Sources */,
 				AB44013620317F4F00019B54 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,6 +446,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 865L62UDE9;
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BT.Demo;
@@ -459,6 +460,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 865L62UDE9;
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BT.Demo;

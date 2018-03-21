@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "UIButton+ImageTitle.h"
+#import "CCButton.h"
 
 @interface ViewController ()
 
@@ -19,15 +19,19 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.frame = CGRectMake(100, 100, 100, 100);
+    CCButton *btn = [[CCButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100) buttonStyle:CCButtonStyleImageTop space:10];
     [btn setTitle:@"文字" forState:UIControlStateNormal];
+    [btn setTitle:@"选中态" forState:UIControlStateSelected];
+    btn.titleLabel.font = [UIFont systemFontOfSize:14];
     [btn setImage:[UIImage imageNamed:@"aaa"] forState:UIControlStateNormal];
     btn.backgroundColor = [UIColor orangeColor];
     [self.view addSubview:btn];
+    [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     
-    [btn setBTButtonStyle:BTButtonStyleImageTop space:10];
-    
+}
+
+- (void)btnClick:(UIButton *)btn {
+    btn.selected = !btn.selected;
 }
 
 

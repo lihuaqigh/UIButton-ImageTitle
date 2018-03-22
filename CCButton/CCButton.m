@@ -64,7 +64,7 @@
             break;
     }
 
-    //NSLog(@"😋(%f-%f),(%f-%f)",labelWidth,labelHeight,imageWith,imageHeight);
+    // NSLog(@"😋(%f-%f),(%f-%f)",labelWidth,labelHeight,imageWith,imageHeight);
     // set button style
     self.titleEdgeInsets = labelEdgeInsets;
     self.imageEdgeInsets = imageEdgeInsets;
